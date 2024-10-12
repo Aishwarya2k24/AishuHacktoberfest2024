@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<body> 
+	<h2> 
+		Checking if the countries 
+		array contains Japan ---> 
+		<span id="ans"></span> 
+	</h2> 
+	<h2> 
+		Checking for Japan in the countries 
+		array from index 2 ---> 
+		<span id="ans2"></span> 
+	</h2> 
+
+	<script> 
+		let countries = ["India", "Japan", 
+			"Canada", "Germany", "Australia"]; 
+
+		// 1st Output 
+		let ans = document.querySelector("#ans"); 
+		let output = countries.includes("Japan"); 
+		ans.append(output); 
+
+		// 2nd Output 
+		let ans2 = document.querySelector("#ans2"); 
+		let output2 = countries.includes("Japan", 2); 
+		ans2.append(output2); 
+	</script> 
+</body> 
+
+</html> 
